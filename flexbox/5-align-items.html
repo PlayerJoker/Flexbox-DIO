@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: rgb(209, 75, 97);
+            margin: 5px;
+            color: whitesmoke;
+            text-align: center;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <section class="container center ">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch ">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container flex-start ">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end ">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline ">
+        <div class="item"></br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <h1>column</h1>
+    <p>flex-start</p>
+    <section class="container flex-start column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <p>center</p>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline column">
+        <div class="item"></br>item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet</div>
+        <div class="item"> Quem num gosta di mim que vai caçá sua turmis!</div>
+    </section>
+
+    <p>alinhamento central à tela</p>
+    <sectio class="container central center">
+        <div class="item">Suco de cevadiss deixa as pessoas mais interessantis.
+            Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!
+            Leite de capivaris, leite de mula manquis sem cabeça.</div>
+    </sectio>
+</body>
+</html>
